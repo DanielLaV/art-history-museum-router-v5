@@ -1,4 +1,5 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Route } from "react-router-dom";
+import GalleryView from "../GalleryView";
 import './GalleryNavigation.css';
 
 
@@ -13,6 +14,10 @@ function GalleryNavigation({ galleries }) {
                     <NavLink to={`/galleries/${gallery.id}`}>{gallery.name}</NavLink>
                 </span>
             ))}
+
+            <Route path={`/galleries/:id`}>
+                <GalleryView galleries={galleries} />
+            </Route>
         </nav>
     )
 }
