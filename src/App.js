@@ -1,10 +1,11 @@
 import './App.css';
+import GalleryNavigation from './components/GalleryNavigation';
 import harvardArt from './data/harvardArt';
 
 function App() {
   return (
     <div>
-      <h1>Hi Daniel</h1>
+      <GalleryNavigation galleries={harvardArt.records}/>
     </div>
   );
 }
