@@ -1,9 +1,10 @@
 import './App.css';
+import harvardArt from './data/harvardArt';
 
 function App() {
   return (
     <div>
-      <h1>React App</h1>
+      <h1>Hi Daniel</h1>
     </div>
   );
 }
