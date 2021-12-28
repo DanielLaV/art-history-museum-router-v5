@@ -15,9 +15,7 @@ function GalleryNavigation({ galleries }) {
                 </span>
             ))}
 
-            <Route path={`/galleries/:id`}>
-                <GalleryView galleries={galleries} />
-            </Route>
+
         </nav>
     )
 }
